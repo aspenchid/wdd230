@@ -1,0 +1,54 @@
+#content{
+    margin: 0 auto;
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: rgb(6, 6, 74);
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(55, 225, 199), 0 0 5px rgb(6, 6, 74);
+    font-size: 30pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    align-items: center;
+}
+main{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+    background-color: rgb(6, 6, 74);
+    color: white;
+    text-align: center;
+    font-size: 12pt;
+    padding: 0.5em
+}
+#datedifferent{
+    color: rgba(241, 64, 214, 0.952);
+}
+img {
+    width:90%;
+    height: auto;
+    /* padding: 0.5em;
+    padding-left: .77em; */
+    align-items: center;
+    box-shadow: 1px 1px 2px black, 0 0 25px rgb(55, 225, 199), 0 0 5px rgb(6, 6, 74);
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-bottom: 15%;
+}
+a:visited { 
+    text-decoration: none; 
+    color: rgb(55, 225, 199); 
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(6, 6, 74);
+}
+a:focus { 
+    text-decoration: none; color:rgb(6, 6, 74); 
+}
+a:active { 
+    text-decoration: none; color:rgb(55, 225, 199);
+}
