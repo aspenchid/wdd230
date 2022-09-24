@@ -16,7 +16,7 @@ img {
     height: auto; 
     margin-top: 1em; 
 }  
-h3 {
+.brand {
     text-decoration: underline;
     background-color: lightblue;
     color:black;
@@ -70,7 +70,7 @@ header{
     .title{
         font-size: 20pt;
     }
-    h3{
+    .brand{
         font-size: 21pt;
     }
     header{
@@ -102,7 +102,7 @@ header{
     .title{
         font-size: 20pt;
     }
-    h3{
+    .brand{
         font-size:25pt;
     }
     header{
