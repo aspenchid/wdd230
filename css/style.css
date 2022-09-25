@@ -16,7 +16,7 @@ header{
     align-items: center;
 }
 main{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 footer{
     background-color: rgb(6, 6, 74);
