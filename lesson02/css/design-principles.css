@@ -23,7 +23,7 @@ img {
     padding: 0.5em;
     margin: 0;
 }
-p{
+p, .title{
     padding: 0.6em;
 }  
 a{ 
