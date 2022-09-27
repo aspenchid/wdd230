@@ -3,6 +3,7 @@
     margin: 0 auto;
     width: 50%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 15pt;
 }
 header{
     display: grid;
@@ -53,4 +54,15 @@ a:focus {
 }
 a:active { 
     text-decoration: none; color:rgb(55, 225, 199);
+}
+@media screen and (max-width: 50em){
+    header{
+        font-size: medium;
+    }
+    #content{
+        font-size: smaller;
+    }
+    footer{
+        font-size: smaller;
+    }
 }
