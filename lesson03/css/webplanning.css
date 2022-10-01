@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Yanone+Kaffeesatz&display=swap');
+#content{
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 15pt;
+}
+header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #ffffff;
+    color: #00155b;
+    font-size: 15pt;
+    font-family: 'Bodoni Moda', serif;
+    text-align: center;
+    align-items: center;
+    outline: solid;
+    outline-width: 0.3em;
+    margin-top: -1em;
+}
+img {
+    width:60%;
+    height: auto;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-bottom: 15%;
+}
+.second{
+    width:25%;
+    height: 10%;
+    align-items: center;
+    margin-top: -0.001em;
+    margin-bottom: 3em;
+    margin-left: -1em;
+}
+nav div{
+    margin: 0 auto;
+    text-align: center;    
+    background-color: #00155b;
+    color: white;
+    padding: 1em;
+    margin: .3em;
+    margin-left: -0.39em;
+    margin-right: -0.39em;            
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.current{
+    background-color: #2a9db9;
+    color:#00155b;
+}
+ul li{
+    padding: 1em;
+}
+footer{
+    background-color: #00155b;
+    color: white;
+    text-align: center;
+    font-size: 12pt;
+    padding: 0.5em;
+    font-family: 'Bodoni Moda', serif;
+    margin-left: -0.5em;
+    margin-right: -0.5em;  
+
+}
+@media screen and (min-width: 53em){
+    nav{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    header{
+        font-size: 20pt;
+    }
+    #content{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
