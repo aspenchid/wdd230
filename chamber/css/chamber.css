@@ -135,7 +135,7 @@ footer{
 
 /* the medium size */
 
-@media only screen and (min-width: 35rem){
+@media only screen and (min-width: 600px){
     header{
         display: grid;
         grid-template-columns: 20% 45% 20% 15%;
@@ -212,7 +212,7 @@ footer{
     footer{
         margin: 0 auto;
         font-family: 'Yanone Kaffeesatz', sans-serif;
-        font-size: 7pt;
+        font-size: 15pt;
         display:grid;
         grid-template-columns: 20% 50% 30%;
         margin-bottom:-20em;
@@ -232,14 +232,14 @@ footer{
     .section3{
         grid-column: 1/4;
         grid-row:2/3;
-        font-size: 5pt;
+        font-size: 10pt;
     }
     .section4{
         grid-column: 1/4;
         grid-row:2/3;
         align-items: center;
         margin-top: 4em;
-        font-size: 5pt;
+        font-size: 10pt;
     }
     .location{
         width:15%;
@@ -248,7 +248,16 @@ footer{
 
 /* the large size */
 
-@media only screen and (min-width: 40rem){
+@media only screen and (min-width: 980px){
+    header{
+        font-size: 20pt;
+    }
+    .date{
+        font-size: 15pt;
+    }
+    #content{
+        font-size: 20pt;
+    }
     nav button{
         display: none;
     }
@@ -256,7 +265,7 @@ footer{
         display: grid;
         justify-content: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        font-size: 7pt;
+        font-size: 15pt;
         grid-column: 1/2;
         position:relative;
         top:0;
@@ -345,6 +354,20 @@ footer{
         margin: 20px;
         margin-top: 0;
         margin-bottom: 0;
-
+    }
+    footer{
+        font-size: 20pt;
+    }
+    .section1{
+        font-size: 20pt;
+    }
+    .section2{
+        font-size: 15pt;
+    }
+    .section3{
+        font-size: 15pt;
+    }
+    .section4{
+        font-size: 15pt;
     }
 } 
