@@ -53,6 +53,7 @@ a:focus {
 a:active { 
     text-decoration: none; color:rgb(55, 225, 199);
 }
+
 @media screen and (max-width: 50em){
     header{
         font-size: medium;
