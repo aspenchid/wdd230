@@ -21,7 +21,6 @@ header{
     width: 60%;
     height: auto;
     padding: 1em;
-    padding-right: -1em;
 }
 .entireName{
     display: flex;
@@ -166,7 +165,6 @@ footer{
         grid-column: 1/4;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100;
         height: 300px;
     }
     #spotlight1{
@@ -234,7 +232,6 @@ footer{
     .section3{
         grid-column: 1/4;
         grid-row:2/3;
-        align-items: right;
         font-size: 5pt;
     }
     .section4{
