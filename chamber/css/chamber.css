@@ -2,13 +2,13 @@
 #content{
     margin: 0 auto;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 7pt;
+    font-size: 12pt;
 }
 header{
     display: grid;
     grid-template-columns: 20% 40% 20% 20%;
     grid-template-rows: 1fr 1fr;
-    font-size: 6pt;
+    font-size: 10pt;
     font-family: 'Bodoni Moda', serif;
     align-items: center;
     background-color: lightblue;
@@ -34,6 +34,14 @@ header{
 }
 .socials{
     padding: 1em;
+}
+.date{
+    grid-row: 2/3;
+    grid-column: 1/5;
+    color: rgb(6, 6, 74);
+    background-color: white;
+    padding: 1em;
+    font-size: 10pt;
 }
 nav button{
     margin: .2rem 2vw;
@@ -93,30 +101,22 @@ nav ul.open{
     height: auto;
     padding: 1em;
 } 
-.date{
-    grid-row: 2/3;
-    grid-column: 1/5;
-    color: rgb(6, 6, 74);
-    background-color: white;
-    padding: 1em;
-    font-size: 6pt;
-}
 .textbox{
-    height: 150px;
+    height: 100%;
     padding: 1em;
     border: solid;
     margin: 1em;
     padding-top: 0.5em;
 }
 #spotlight1, #spotlight2, #spotlight3{
-    height: 120px;
+    height: 100%;
     padding: 1em;
     border: solid;
     margin: 1em;
     padding-top: 0.5em;
 }
 #spotlights{
-    height: 300px;
+    height: 100%;
     border: solid;
     margin: 1em;
 }
@@ -140,10 +140,10 @@ footer{
         display: grid;
         grid-template-columns: 20% 45% 20% 15%;
         grid-template-rows: 1fr 1fr;
-        font-size: 10pt;
+        font-size: 15pt;
     }
     .date{
-        font-size: 10pt;
+        font-size: 12pt;
     }
     #content{
         font-size: 15pt;
@@ -152,6 +152,7 @@ footer{
         display: grid;
         grid-template-columns: .5fr .05fr .45fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 2.25em 0em 
     }
     #hero{
         grid-column: 1/4;
@@ -165,19 +166,30 @@ footer{
         grid-column: 1/4;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: 300px;
+        grid-template-rows: 1fr;
+        height: 100%;
+        padding: 10px 20px 20px;
     }
     #spotlight1{
         grid-column: 1/2;
-        grid-row: 3/4;
-        height: 150px;
+        grid-row: 1/2;
+        height: 100%;
+        margin-right: 5px;
+        margin: 0;
+        padding: 0;
         margin-right: 5px;
     }
     #spotlight2{
         grid-column: 2/4;
-        grid-row: 3/4;
-        height: 150px;
+        grid-row: 1/2;
+        height: 100%;
         margin-left: 5px;
+        margin: 0;
+        padding: 0;
+        margin-left: 5px;
+    }
+    #spotlight2 p, #spotlight1 p, #spotlight3 p{
+        padding: 10px 20px 20px
     }
     #spotlight3{
         display: none;
@@ -190,17 +202,19 @@ footer{
         grid-row: 4/5;
     }
     #event{
+        height: 100%;
         grid-column: 1/3;
         grid-row: 5/6;
         margin-right: 0;
     }
     #weather{
+        height: 100%;
         grid-column: 3/4;
         grid-row: 5/6;
         margin-left: 10px;
     }
     .notspotlight{
-        height: 250px;
+        height: 100%;
         padding: 1em;
         border: solid;
         margin: 1em;
@@ -215,31 +229,25 @@ footer{
         font-size: 15pt;
         display:grid;
         grid-template-columns: 20% 50% 30%;
-        margin-bottom:-20em;
+        margin-top: 4em
     }
     .section1{
         text-align: left;
         align-items: center;
-        font-size: 15pt;
+        font-size: 17pt;
         margin-top: 1em;
         padding-left: 1em;
     }
     .section2{
         align-items: center;
-        font-size: 10pt;
+        font-size: 12pt;
         margin-top: 2em;
     }
     .section3{
         grid-column: 1/4;
         grid-row:2/3;
-        font-size: 10pt;
-    }
-    .section4{
-        grid-column: 1/4;
-        grid-row:2/3;
-        align-items: center;
-        margin-top: 4em;
-        font-size: 10pt;
+        font-size: 12pt;
+        margin-top: 1em;
     }
     .location{
         width:15%;
@@ -250,110 +258,111 @@ footer{
 
 @media only screen and (min-width: 980px){
     header{
-        font-size: 20pt;
+        font-size: 15pt;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        padding-bottom: 2em;
+    }
+    .entireName{
+        padding-right: 2em;
+        padding-bottom: 1em
+    }
+    .logo1{
+        width:60%;
+        padding-right: 0;
+    }
+    .socials{
+        width: 50%;
+        text-align: right;
+        margin-left: 2em;
     }
     .date{
         font-size: 15pt;
-    }
-    #content{
-        font-size: 20pt;
+        grid-row: 3/4;
     }
     nav button{
         display: none;
     }
-    nav ul#primaryNav{
+    #primaryNav{
         display: grid;
-        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        font-size: 15pt;
-        grid-column: 1/2;
-        position:relative;
-        top:0;
-        display: block;
-        background-color: rgb(6, 6, 74);
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #entireNav{
+        grid-column: 3/4;
+        grid-row: 1/2;
     }
     nav ul li a {
         border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
-        
+        font-size: 15pt;
+        background-color: rgb(6, 6, 74);
+    }
+    .socials{
+        grid-column:4/5;
     }
     #content{
-        margin-right:0
+        font-size: 20pt;
+        margin-right: 0;
     }
-    /* .socials{
-        grid-column:4/5;
-    } */
     main{
         display: grid;
         grid-template-columns: .25fr .5fr .25fr;
         grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 2.25em 0;
     }
     #event{
-        height: 150px;
         grid-column: 1/2;
         grid-row: 1/2;
-        margin: 0;
-        margin: 20px;
+        margin: 1em 0.25em 1em 1em;
     }
     #hero{
-        height: 400px;
         grid-column: 2/3;
         grid-row: 1/3;
+        margin: 1em 0.25em 1em 0.25em;
     }
     #spotlights{
-        height: 625px;
         display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-column: 3/4;
         grid-row: 1/4;
+        margin: 1em 1em 1em 0.25em;
+        padding: 0.75em;
     }
     #weather{
-        height: 150px;
         grid-column: 1/2;
         grid-row: 2/3;
-        margin: 0;
-        margin: 20px;
+        margin: 1em 0.25em 1em 1em;
     }
     #join{
-        height: 150px;
         grid-column: 1/2;
         grid-row: 3/4;
-        margin: 0;
-        margin: 20px;
+        margin: 1em 0.25em 1em 1em;
+
     }
     #newsrelease{
-        height: 150px;
         grid-column: 2/3;
         grid-row: 3/4;
+        margin: 1em 0.25em 1em 0.25em;
     }
     #spotlight1{
-        height: 150px;
         grid-column: 1/4;
         grid-row: 1/2;
-        margin: 0;
-        margin: 20px;
-        margin-bottom: 0;
+        margin: 0
     }
     #spotlight2{
-        height: 150px;
         grid-column: 1/4;
         grid-row: 2/3;
-        margin: 0;
-        margin: 20px;
-        margin-top: 10px;
-        margin-bottom: 0;
+        margin: 0
     }
     #spotlight3{
-        height: 150px;
         display: block; 
         visibility: visible;
         grid-column: 1/4;
         grid-row: 3/4;
         margin: 0;
-        margin: 20px;
-        margin-top: 0;
-        margin-bottom: 0;
+        padding:0
     }
     footer{
         font-size: 20pt;
@@ -366,8 +375,6 @@ footer{
     }
     .section3{
         font-size: 15pt;
-    }
-    .section4{
-        font-size: 15pt;
+        margin-top: 1em;
     }
 } 
