@@ -2,7 +2,7 @@
 #content{
     margin: 0 auto;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 12pt;
+    font-size: 15pt;
 }
 header{
     display: grid;
@@ -11,7 +11,17 @@ header{
     font-size: 10pt;
     font-family: 'Bodoni Moda', serif;
     align-items: center;
-    background-color: lightblue;
+    background-color: rgb(173, 216, 230);
+    padding-bottom: 52px
+}
+header p:nth-child(1){
+    display: none;
+    grid-row: 1/2;
+    grid-column: 1/5;
+    text-align: center;
+    color:rgb(6, 6, 74);
+    border: 1pt solid rgb(6, 6, 74);
+    padding: 7pt;
 }
 .caption{
     font-family: 'Bodoni Moda', serif;
@@ -39,14 +49,17 @@ header{
     grid-row: 2/3;
     grid-column: 1/5;
     color: rgb(6, 6, 74);
-    background-color: white;
+    background-color: rgba(6, 6, 74, 0.09);
     padding: 1em;
     font-size: 10pt;
+    text-align: center;
+    margin-top: 50px
 }
 nav button{
     margin: .2rem 2vw;
     border: none;
     font-size: 2rem;
+    text-align: right;
 }
 #hamburgerBtn{
     text-align: right;
@@ -93,8 +106,14 @@ nav ul.open{
 #hamburgerBtn.open span:nth-child(2){
     display: block;
 } 
-.date{
-    text-align: center;
+#entireNav{
+    position: absolute;
+    left: 82%;
+    top: 2%
+}
+#primaryNav{
+    position:relative;
+    left: 20%;
 }
 .logo2{
     width: 20%;
@@ -132,6 +151,94 @@ footer{
     display: none;
     visibility: hidden;
 }
+#hero{
+    position: relative;
+    padding-top: 20px;
+    padding-right: 20px;
+    background-color: rgb(6, 6, 74);
+}
+#hero img{
+    width: 100%;
+    height: auto;
+}
+#hero button{
+    border-radius: 12px;
+    background-color: lightblue;
+    color: rgb(6, 6, 74);
+    padding: 10px;
+    font-size: 15pt;
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    box-shadow: 0px 0px 2px 2px rgb(6, 6, 74);
+}
+#hero button:hover{
+    background-color: white;
+    transition: 0.5s;
+    box-shadow: none;
+}
+#hero h2{
+    color: rgb(6, 6, 74);
+    position: absolute;
+    left: 50px;
+ }
+ #event{
+    background-color: rgb(6, 6, 74);
+    color: white;
+    position: relative;
+    padding-top: 20px;
+ }
+ #event img{
+    width: 100%;
+    height: auto;
+}
+#event h2{
+    position: absolute;
+    left: 50px;
+    color: rgb(6, 6, 74);
+}
+#weather{
+    position: relative;
+    background-color: rgb(6, 6, 74);
+    color: white;
+    margin: 0px 60px 0px 60px
+}
+#weather img{
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    width: 20%;
+    height:auto;
+}
+#newsrelease{
+    background-color: rgb(6, 6, 74);
+    color: white;
+}
+#spotlights{
+    background-color: rgb(6, 6, 74);
+    position: relative;
+}
+#spotlight1, #spotlight2, #spotlight3{
+    background-color: white;
+    color: rgb(6, 6, 74);
+    text-align: center;
+}
+#spotlight1 img, #spotlight2 img, #spotlight3 img{
+    width: 100%;
+    height: auto;
+}
+#spotlight1 p, #spotlight2 p, #spotlight3 p{
+    margin: 0;
+    padding: 4px
+}
+#spotlight1 h2, #spotlight2 h2, #spotlight3 h2{
+    position: absolute;
+    left: 60px;
+    padding: 10px;
+    background-color: rgb(6, 6, 74);
+    color: white;
+    border-radius: 12px;
+}
 
 /* the medium size */
 
@@ -152,6 +259,7 @@ footer{
         display: grid;
         grid-template-columns: .5fr .05fr .45fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20% 10% 20% 7% 17%;
         grid-gap: 2.25em 0em 
     }
     #hero{
@@ -188,7 +296,7 @@ footer{
         padding: 0;
         margin-left: 5px;
     }
-    #spotlight2 p, #spotlight1 p, #spotlight3 p{
+    #spotlight2 h2, #spotlight1 h2, #spotlight3 h2{
         padding: 10px 20px 20px
     }
     #spotlight3{
@@ -211,7 +319,7 @@ footer{
         height: 100%;
         grid-column: 3/4;
         grid-row: 5/6;
-        margin-left: 10px;
+        margin: 20px 20px 10px 10px
     }
     .notspotlight{
         height: 100%;
@@ -229,7 +337,7 @@ footer{
         font-size: 15pt;
         display:grid;
         grid-template-columns: 20% 50% 30%;
-        margin-top: 4em
+        margin-top: -250px
     }
     .section1{
         text-align: left;
@@ -252,11 +360,50 @@ footer{
     .location{
         width:15%;
     }
+    #hero button{
+        right: 50px;
+        bottom: 100px;
+        font-size: 25px;
+    }
+    #join button{
+        border-radius: 12px;
+        background-color: lightblue;
+        color: rgb(6, 6, 74);
+        padding: 10px;
+        font-size: 30px;
+        box-shadow: 0px 0px 2px 2px rgb(6, 6, 74);
+        width: 100%;
+    }
+    #join button:hover{
+        background-color: white;
+        transition: 0.5s;
+        box-shadow: none;
+    }
+    #join{
+        text-align: center;
+        background-color: rgb(6, 6, 74);
+        color:white
+    }
+    #weather{
+        padding-top: 20px;
+    }
+    #spotlight2 h2{
+        left: 430px;
+    }
+    #entireNav{
+        position: absolute;
+        left: 82%;
+        top: 6%
+    }
+    #primaryNav{
+        position:relative;
+        left: 20%;
+    }
 }
 
 /* the large size */
 
-@media only screen and (min-width: 980px){
+@media only screen and (min-width: 1200px){
     header{
         font-size: 15pt;
         grid-template-columns: repeat(4, 1fr);
@@ -284,12 +431,14 @@ footer{
         display: none;
     }
     #primaryNav{
+        position:static;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column: 3/4;
-        grid-row: 1/2;
+        grid-row: 2/3;
     }
     #entireNav{
+        position: static;
         grid-column: 3/4;
         grid-row: 1/2;
     }
@@ -302,14 +451,16 @@ footer{
         grid-column:4/5;
     }
     #content{
-        font-size: 20pt;
+        font-size: 15pt;
         margin-right: 0;
     }
     main{
         display: grid;
         grid-template-columns: .25fr .5fr .25fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: .2fr .4fr .2fr;
         grid-gap: 2.25em 0;
+        margin: 0 100px 0 100px;
+        font-size: 10pt;
     }
     #event{
         grid-column: 1/2;
@@ -365,16 +516,51 @@ footer{
         padding:0
     }
     footer{
-        font-size: 20pt;
+        font-size: 1pt;
+        margin:0;
+        padding:0;
+        margin-top: 100px
+    }
+    .logo2{
+        width: 50%;
+        margin: 30px 0px 0 60px
     }
     .section1{
         font-size: 20pt;
+        margin-top: 0;
     }
     .section2{
         font-size: 15pt;
+        margin-top: 0;
     }
     .section3{
         font-size: 15pt;
-        margin-top: 1em;
+        margin-top: 0;
+    }
+    #hero img{
+        height:100%;
+    }
+    #hero{
+        margin-bottom: 0;
+    }
+    #spotlight1 h2, #spotlight2 h2, #spotlight3 h2{
+        left: 30px;
+        font-size: 15pt;
+    }
+    #join button, #join p{
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+    #event img, #event h2, #event p{
+        padding-top:20px;
+        padding-bottom:0 
+    }
+    #newsrelease{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: -30px
+    }
+    h2{
+        font-size: 20pt
     }
 } 
