@@ -165,7 +165,7 @@ footer{
     border-radius: 12px;
     background-color: lightblue;
     color: rgb(6, 6, 74);
-    padding: 10px;
+    padding: 5px;
     font-size: 15pt;
     position: absolute;
     right: 40px;
@@ -178,9 +178,12 @@ footer{
     box-shadow: none;
 }
 #hero h2{
-    color: rgb(6, 6, 74);
     position: absolute;
     left: 50px;
+    background-color: rgb(6, 6, 74);
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
  }
  #event{
     background-color: rgb(6, 6, 74);
@@ -195,7 +198,10 @@ footer{
 #event h2{
     position: absolute;
     left: 50px;
-    color: rgb(6, 6, 74);
+    background-color: rgb(6, 6, 74);
+    color: white;
+    border-radius: 12px;
+    padding: 10px
 }
 #weather{
     position: relative;
@@ -295,9 +301,6 @@ footer{
         margin: 0;
         padding: 0;
         margin-left: 5px;
-    }
-    #spotlight2 h2, #spotlight1 h2, #spotlight3 h2{
-        padding: 10px 20px 20px
     }
     #spotlight3{
         display: none;
@@ -550,10 +553,6 @@ footer{
     #join button, #join p{
         margin-top: 60px;
         margin-bottom: 0;
-    }
-    #event img, #event h2, #event p{
-        padding-top:20px;
-        padding-bottom:0 
     }
     #newsrelease{
         text-align: center;
