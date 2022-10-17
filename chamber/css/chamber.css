@@ -7,7 +7,7 @@
 header{
     display: grid;
     grid-template-columns: 20% 40% 20% 20%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     font-size: 10pt;
     font-family: 'Bodoni Moda', serif;
     align-items: center;
@@ -46,7 +46,7 @@ header p:nth-child(1){
     padding: 1em;
 }
 .date{
-    grid-row: 2/3;
+    grid-row: 3/4;
     grid-column: 1/5;
     color: rgb(6, 6, 74);
     background-color: rgba(6, 6, 74, 0.09);
@@ -109,7 +109,6 @@ nav ul.open{
 #entireNav{
     position: absolute;
     left: 82%;
-    top: 2%
 }
 #primaryNav{
     position:relative;
@@ -185,13 +184,13 @@ footer{
     border-radius: 12px;
     padding: 10px;
  }
- #event{
+#event{
     background-color: rgb(6, 6, 74);
     color: white;
     position: relative;
     padding-top: 20px;
  }
- #event img{
+#event img{
     width: 100%;
     height: auto;
 }
@@ -396,7 +395,6 @@ footer{
     #entireNav{
         position: absolute;
         left: 82%;
-        top: 6%
     }
     #primaryNav{
         position:relative;
@@ -443,7 +441,7 @@ footer{
     #entireNav{
         position: static;
         grid-column: 3/4;
-        grid-row: 1/2;
+        grid-row: 2/3;
     }
     nav ul li a {
         border: none;

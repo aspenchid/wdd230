@@ -17,7 +17,7 @@ const today = new Date();
 document.querySelector("footer div span").textContent = today.getFullYear();
 
 // make this actually == 1, 2
-if (today.getDay() == 1){
+if (today.getDay() == 1, 2){
     document.querySelector("header p").style.display="block";
 }
 
