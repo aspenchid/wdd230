@@ -7,12 +7,12 @@
 header{
     display: grid;
     grid-template-columns: 20% 40% 20% 20%;
-    grid-template-rows: 1fr 1fr 1fr;
-    font-size: 10pt;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    font-size: 8pt;
     font-family: 'Bodoni Moda', serif;
     align-items: center;
     background-color: rgb(173, 216, 230);
-    padding-bottom: 52px
+    padding-bottom: 52px;
 }
 header p:nth-child(1){
     display: none;
@@ -33,13 +33,15 @@ header p:nth-child(1){
     width: 60%;
     height: auto;
     padding: 1em;
+    grid-row: 2/3;
 }
 .entireName{
     display: flex;
     flex-direction: column;
     margin-right: -1em;
     color:rgb(6, 6, 74);
-    font-size: 16pt;
+    font-size: 10pt;
+    grid-row: 2/3;
 }
 .social-media{
     width: 40%;
@@ -47,6 +49,7 @@ header p:nth-child(1){
 }
 .socials{
     padding: 1em;
+    grid-row: 2/3;
 }
 .date{
     grid-row: 3/4;
@@ -56,6 +59,7 @@ header p:nth-child(1){
     padding: 1em;
     font-size: 10pt;
     text-align: center;
+    margin-top: 15px;
 }
 nav button{
     margin: .2rem 2vw;
@@ -75,11 +79,12 @@ nav ul{
 }
 nav ul li a{
     display: block;
-    padding: .8rem 2vw;
+    padding: 6px;
     text-decoration: none;
     color: white;
     border-top: 1px solid white;
     text-align: right;
+    grid-row: 2/3;
 }
 nav ul li.active{
     background-color: rgba(0, 0, 0, 0.2);
@@ -109,8 +114,9 @@ nav ul.open{
     display: block;
 } 
 #entireNav{
-    position: absolute;
-    left: 82%;
+    position:absolute;
+    left: 80%;
+    font-size: 7pt;
 }
 #primaryNav{
     position:relative;
@@ -158,9 +164,12 @@ footer{
     padding-right: 20px;
     background-color: rgb(6, 6, 74);
 }
+#hero{
+    display: flex;
+}
 #hero img{
-    width: 100%;
-    height: auto;
+    justify-content: center;
+    text-align:center
 }
 #hero button{
     border-radius: 12px;
@@ -180,25 +189,30 @@ footer{
 }
 #hero h2{
     position: absolute;
-    left: 50px;
+    left: 40px;
     background-color: rgb(6, 6, 74);
     color: white;
     border-radius: 12px;
     padding: 10px;
- }
+}
+#hero img{
+    height:100%;
+    width: 100%;
+    object-fit: contain;
+}
 #event{
     background-color: rgb(6, 6, 74);
     color: white;
     position: relative;
     padding-top: 20px;
- }
+}
 #event img{
     width: 100%;
     height: auto;
 }
 #event h2{
     position: absolute;
-    left: 50px;
+    left: 40px;
     background-color: rgb(6, 6, 74);
     color: white;
     border-radius: 12px;
@@ -240,7 +254,7 @@ footer{
 }
 #spotlight1 h2, #spotlight2 h2, #spotlight3 h2{
     position: absolute;
-    left: 60px;
+    left: 40px;
     padding: 10px;
     background-color: rgb(6, 6, 74);
     color: white;
@@ -253,10 +267,14 @@ footer{
     header{
         display: grid;
         grid-template-columns: 20% 45% 20% 15%;
-        grid-template-rows: 1fr 1fr;
-        font-size: 15pt;
     }
     .date{
+        font-size: 12pt;
+    }
+    .entireName{
+        font-size: 17pt;
+    }
+    nav ul li{
         font-size: 12pt;
     }
     #content{
@@ -272,6 +290,11 @@ footer{
     #hero{
         grid-column: 1/4;
         grid-row: 1/2;
+    }
+    #hero img{
+        height:100%;
+        width: 100%;
+        object-fit: contain;
     }
     #newsrelease{
         grid-column: 1/4;
@@ -396,7 +419,7 @@ footer{
     }
     #entireNav{
         position: absolute;
-        left: 82%;
+        left: 85%;
     }
     #primaryNav{
         position:relative;
@@ -456,6 +479,7 @@ footer{
         grid-row: 2/3;
     }
     nav ul li a {
+        padding: .8rem 2vw;
         border: none;
         font-size: 15pt;
         background-color: rgb(6, 6, 74);
@@ -552,8 +576,11 @@ footer{
         font-size: 15pt;
         margin-top: 0;
     }
+    /* this is how to get the image to fit in the center of the div */
     #hero img{
         height:100%;
+        width: 100%;
+        object-fit: contain;
     }
     #spotlight1 h2, #spotlight2 h2, #spotlight3 h2{
         left: 30px;
