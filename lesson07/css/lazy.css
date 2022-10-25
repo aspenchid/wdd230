@@ -1,0 +1,8 @@
+picture img{
+    transition: filter 3s;
+    display: block;
+    padding-bottom: 20px;
+}
+picture img[data-src]{
+    filter:blur(2em);
+}
