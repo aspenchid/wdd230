@@ -204,6 +204,7 @@ footer{
     border-radius: 12px;
     padding: 10px;
 }
+    /* this is how to get the image to fit in the center of the div */
 #hero img{
     height:100%;
     width: 100%;
