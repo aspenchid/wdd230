@@ -270,7 +270,39 @@ footer{
     color: white;
     border-radius: 12px;
 }
-
+/* DISCOVER PAGE */
+#discoverMain{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.bozemanPictures picture img{
+    display: block;
+}
+.bozemanPictures p{
+    padding: 20px 0px 20px 0px;
+}
+#discoverMain{
+    margin: 20px;
+}
+#discoverMain h2{
+    padding: 10px;
+    background-color: rgb(6, 6, 74);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+#discoverMain p, #discoverMain span, #discoverMain ul{
+    font-size: 15pt;
+}
+#discoverMain h3{
+    font-size: 20pt;
+}
+#discoverMain h2{
+    font-size: 25pt;
+}
+#discoverMain ul li{
+    padding: 5px;
+}
 /* the medium size */
 
 @media only screen and (min-width: 600px){
@@ -447,6 +479,13 @@ footer{
     #spotlight2 h2{
         left: 20px;
     }
+/* The discover page */
+    .bozemanPictures img:hover{
+        box-shadow: 0 0 50px #333;
+    }
+    #discoverMain{
+        margin: 50px;
+    }
 }
 
 /* the large size */
@@ -611,5 +650,9 @@ footer{
     }
     h2{
         font-size: 20pt
+    }
+/* The discover page */
+    .bozemanPictures img:hover{
+        box-shadow: 0 0 50px #333;
     }
 } 

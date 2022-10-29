@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aspen Chidester in WDD 230: W03 Assignment: Chamber of Commerce Site">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/chamber.css">
+    <title>Montana Peak Chamber of Commerce</title>
+</head>
+<body>
+    <div id='content'>
+        <header>
+            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+            <img class='logo1' src="images/logo.webp" alt="Montana Peak Chamber of Commerce logo">
+            <section class="entireName">
+                <h1>Montana Peak</h1>
+                <div class='caption'>Chamber of Commerce</div>
+            </section>
+            <div class="socials">
+                <img class="social-media" src="images/instagram.png" alt='Instagram logo'>
+                <img class="social-media" src="images/facebook.png" alt='Facebook logo'>
+            </div>  
+            <nav id="entireNav">
+                <button id="hamburgerBtn"><span>&#9776;</span><span>𝗑</span></button>
+                        <ul id="primaryNav">
+                            <!-- put in the active after li so <li class="active><a" -->
+                            <li><a href='discover.html'>Discover</a></li>
+                            <li><a href='#'>Directory</a></li>
+                            <li><a href='#'>Join</a></li>
+                            <li><a href='#'>Contact</a></li>
+                        </ul>
+                    </nav>
+            <div class="date"></div>
+        </header>
+        <main id="discoverMain">
+            <h2>Discover Page</h2>
+            <h3><span id="visit-message"></span></h3>
+            <div>
+                <h3>Montana Peak Demographic for Bozeman</h3>
+                    <ul>
+                        <li>Population: 56,495</li>
+                        <li>Land Area(mi²): 20.3 sq mi</li>
+                        <li>2022 Growth Rate: 2.92% (1,601)</li>
+                        <li>Size ranking in MT: 4th</li>
+                        <li>County: Gallatin Peak County</li>
+                    </ul>
+            </div>
+            <div class="bozemanPictures">
+                <picture id="pic1">
+                    <source media="(min-width: 200px) and (max-width: 600px)" srcset="images/Bozeman01-400.jpg">
+                    <source media="(min-width: 600px) and (max-width: 1280px)" srcset="images/Bozeman01-500.jpg">
+                    <source media="(min-width: 1280px)" srcset="images/Bozeman01-600.jpg">
+                    <img src="https://dummyimage.com/300x400/ccc/fff" alt="Bozeman Image"
+                    data-src="images/Bozeman01.jpg" alt="Bozeman Image">
+                </picture>
+                <p> Downtown Bozeman is a great place to have some local food, and check out the antique shops.
+                </p>
+                <picture id="pic2">
+                    <source media="(min-width: 200px) and (max-width: 600px)" srcset="images/Bozeman02-400.jpg">
+                    <source media="(min-width: 600px) and (max-width: 1280px)" srcset="images/Bozeman0-500.jpg">
+                    <source media="(min-width: 1280px)" srcset="images/Bozeman02-600.jpg">
+                    <img src="https://dummyimage.com/300x400/ccc/fff" alt="Bozeman Image"
+                    data-src="images/Bozeman02.jpg" alt="Bozeman Image">
+                </picture>
+                <p> The Ellen Theatre is a vintage restored venue that hosts an array of shows & performers.
+                </p>
+                <picture id="pic3">
+                    <source media="(min-width: 200px) and (max-width: 600px)" srcset="images/Bozeman03-400.jpg">
+                    <source media="(min-width: 600px) and (max-width: 1280px)" srcset="images/Bozeman03-500.jpg">
+                    <source media="(min-width: 1280px)" srcset="images/Bozeman03-600.jpg">
+                    <img src="https://dummyimage.com/300x400/ccc/fff" alt="Bozeman Image"
+                    data-src="images/Bozeman03.jpg" alt="Bozeman Image">
+                </picture>
+                <p> Museum of the Rockies is a museum in Bozeman, Montana. 
+                    Originally affiliated with Montana State University in Bozeman, 
+                    and now also, the Smithsonian Institution, the museum is known 
+                    for its paleontological collections, although these are not its sole focus.
+                </p>
+                <picture id="pic4">
+                    <source media="(min-width: 200px) and (max-width: 600px)" srcset="images/Bozeman04-400.jpg">
+                    <source media="(min-width: 600px) and (max-width: 1280px)" srcset="images/Bozeman04-500.jpg">
+                    <source media="(min-width: 1280px)" srcset="images/Bozeman04-600.jpg">
+                    <img src="https://dummyimage.com/300x400/ccc/fff" alt="Bozeman Image"
+                    data-src="images/Bozeman04.jpg" alt="Bozeman Image">
+                </picture>
+                <p> Located on the south side of Baldy Mountain overlooking Gallatin Valley, 
+                    the “M” trail is accessed via the trailhead at Route 86 in Bridger Canyon. 
+                    The “M” rock letter formation sits about 6,000 feet high from the roughly 
+                    5,000-foot high trailhead.
+                </p>
+                <picture id="pic5">
+                    <source media="(min-width: 200px) and (max-width: 600px)" srcset="images/Bozeman05-400.jpg">
+                    <source media="(min-width: 600px) and (max-width: 1280px)" srcset="images/Bozeman05-500.jpg">
+                    <source media="(min-width: 1280px)" srcset="images/Bozeman05-600.jpg">
+                    <img src="https://dummyimage.com/300x400/ccc/fff" alt="Bozeman Image"
+                    data-src="images/Bozeman05.jpg" alt="Bozeman Image">
+                </picture>
+                <p> Bridger Bowl is a popular ski area in the Bridger mountain range. 
+                    It serves the local population of Gallatin County, including Montana State University. 
+                    The summit elevation is 8,700 feet above sea level, with a vertical drop of 2,600 feet on east-facing slopes.
+                </p>
+                <picture id="pic6">
+                    <source media="(min-width: 200px) and (max-width: 600px)" srcset="images/Bozeman06-400.jpg">
+                    <source media="(min-width: 600px) and (max-width: 1280px)" srcset="images/Bozeman06-500.jpg">
+                    <source media="(min-width: 1280px)" srcset="images/Bozeman06-600.jpg">
+                    <img src="https://dummyimage.com/300x400/ccc/fff" alt="Bozeman Image"
+                    data-src="images/Bozeman06.jpg" alt="Bozeman Image">
+                </picture>
+                <p> But the East Gallatin Recreation Area provides Bozeman’s own brand of sandy paradise.
+                    On hot summer days, visitors can play on the beach, swim in the lake or take a shady 
+                    stroll down to the banks of the East Gallatin.
+                </p>
+                <picture id="pic7">
+                    <source media="(min-width: 200px) and (max-width: 600px)" srcset="images/Bozeman07-400.jpg">
+                    <source media="(min-width: 600px) and (max-width: 1280px)" srcset="images/Bozeman07-500.jpg">
+                    <source media="(min-width: 1280px)" srcset="images/Bozeman07-600.jpg">
+                    <img src="https://dummyimage.com/300x400/ccc/fff" alt="Bozeman Image"
+                    data-src="images/Bozeman07.jpg" alt="Bozeman Image">
+                </picture>
+                <p> Hyalite Canyon Recreation Area is the most heavily visited recreation area in Montana with 
+                    three campgrounds and two day use areas. The reservoir's "no-wake" rule make it a canoeing and fishing pleasure.
+
+                </p>
+                <picture id="pic8">
+                    <source media="(min-width: 200px) and (max-width: 600px)" srcset="images/Bozeman08-400.jpg">
+                    <source media="(min-width: 600px) and (max-width: 1280px)" srcset="images/Bozeman08-500.jpg">
+                    <source media="(min-width: 1280px)" srcset="images/Bozeman08-600.jpg">
+                    <img src="https://dummyimage.com/300x400/ccc/fff" alt="Bozeman Image"
+                    data-src="images/Bozeman08.jpg" alt="Bozeman Image">
+                </picture>
+                <p> Bozeman Hotsprings is an enduring complex featuring natural hot springs feeding indoor & outdoor pools, plus saunas & a gym.
+                </p>
+                <picture id="pic9">
+                    <source media="(min-width: 200px) and (max-width: 600px)" srcset="images/Bozeman09-400.jpg">
+                    <source media="(min-width: 600px) and (max-width: 1280px)" srcset="images/Bozeman09-500.jpg">
+                    <source media="(min-width: 1280px)" srcset="images/Bozeman09-600.jpg">
+                    <img src="https://dummyimage.com/300x400/ccc/fff" alt="Bozeman Image"
+                    data-src="images/Bozeman09.jpg" alt="Bozeman Image">
+                </picture>
+                <p> Since 1980, Gallatin Valley Mall has been open to provide a modest, long-standing indoor 
+                    shopping complex with a movie theater & casual dining options.
+                </p>
+            </div>
+        </main>
+        <footer>
+            <img class="logo2" src="images/logo.webp" alt="Montana Peak Chamber of Commerce logo">
+            <div class="section1">
+            <h3>Montana Peak Chamber of Commerce</h3>
+            <p>2000 Commerce Way, Bozeman, MT 59715</p>
+            </div>
+            <div class="section2">
+            <p>info@montanapeakchamber.org</p>
+            <p>+(406)-551-0550</p>
+            <p>Location Map</p>
+            <a target="_blank" href="https://goo.gl/maps/NKLb1nPGvew5g7Y66"><img class="location" src="images/pin.png" alt="pin to maps"></a>
+            </div>  
+            <hr>
+            <div class="section3">
+            <div> &copy;<span></span> Montana Peak Chamber | <strong>Aspen Chidester</strong> | WDD 230 Project | Last Modification: <span id="lastupdated"></span></div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/discover.js"></script>
+</body>
+</html>

@@ -7,11 +7,6 @@ const loadImages = (image) => {
     };
 };
 
-// use if you are putting loading = "lazy" in HTML on images after alt
-// imagesToLoad.forEach((img) => {
-//     loadImages(img);
-// });
-
 //use for an intersection observer
 if("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((items, observer) =>{
