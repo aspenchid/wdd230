@@ -14,27 +14,27 @@ td, th{
     padding: 10px;
 }
 tbody tr:nth-child(odd){
-    background-color: rgb(230, 255, 237);
+    background-color: rgb(226, 247, 232);
 }
 tbody tr:first-child, #novGoal{
-    background-color: rgb(99, 140, 166);
+    background-color: rgb(30, 27, 115);
     color: white;
 }
 tbody tr:nth-child(even){
-    background-color: rgb(231, 240, 237);
+    background-color: rgb(227, 229, 229);
 }
 thead{
     font-size: 12pt;
 }
 thead, tfoot{
-    background-color: rgb(126, 185, 193);
+    background-color: rgb(107, 186, 166);
 }
 tfoot{
     font-size: 10pt;
 }
 table, tr, td, th{
     border-collapse: collapse;
-    border: 1px solid rgb(196, 198, 197);
+    border: 1px solid rgb(162, 163, 162);
 }
 #blackFriday{
     font-style: italic;

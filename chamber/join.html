@@ -28,9 +28,9 @@
                         <ul id="primaryNav">
                             <!-- put in the active after li so <li class="active><a" -->
                             <li><a href='discover.html'>Discover</a></li>
-                            <li><a href='#'>Directory</a></li>
+                            <li><a href='directory.html'>Directory</a></li>
                             <li><a href='join.html'>Join</a></li>
-                            <li><a href='#'>Contact</a></li>
+                            <li><a href='directory.html'>Contact</a></li>
                         </ul>
                     </nav>
             <div class="date"></div>
@@ -47,6 +47,16 @@
                     <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                     <label>Business Name* <input type="text" name="bname" required></label>
                 </fieldset>
+                <fieldset>
+                    <legend>Membership</legend>
+                    <div>Membership Level</div>
+                    <label><input type="radio" name="membership" value="np">Non-profit</label>
+                    <label><input type="radio" name="membership" value="bronze">Bronze</label>
+                    <label><input type="radio" name="membership" value="silver">Silver</label>
+                    <label><input type="radio" name="membership" value="gold">Gold</label>
+                    <label>Business Description<input type="text" name="bdescription"></label>
+                </fieldset>
+                <button>Submit</button>
             </form>
             </div>
         </main>
