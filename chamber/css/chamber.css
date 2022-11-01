@@ -303,6 +303,13 @@ footer{
 #discoverMain ul li{
     padding: 5px;
 }
+/*JOIN PAGE*/
+#thankYou{
+    text-align: center;
+    font-size: 40px;
+    grid-column: 2/3;
+    padding-top:50px
+}
 /* the medium size */
 
 @media only screen and (min-width: 600px){
@@ -523,7 +530,7 @@ footer{
     #primaryNav{
         position:static;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-column: 3/4;
         grid-row: 2/3;
     }
@@ -535,14 +542,14 @@ footer{
     nav ul li a {
         padding: .8rem 2vw;
         border: none;
-        font-size: 15pt;
+        font-size: 12pt;
         background-color: rgb(6, 6, 74);
     }
     .socials{
         grid-column:4/5;
     }
     #content{
-        font-size: 15pt;
+        font-size: 10pt;
         margin-right: 0;
     }
     main{
