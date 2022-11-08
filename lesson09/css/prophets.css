@@ -1,6 +1,7 @@
 #content {
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .cards {
@@ -9,7 +10,7 @@
     text-align: center;
     justify-content: center;
 }
-.cards section {
+.cards section{
     border: 1px solid rgb(66, 29, 29);
     background-color: tan;
     padding: 30px;
