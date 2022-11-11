@@ -6,7 +6,7 @@
         "citystatezip": "Bozeman, MT 59718",
         "phone": "(800) 243-0320",
         "websiteURL": "http://www.320ranch.com/",
-        "imageURL": "images/directory320.png"
+        "imageURL": "images/directory320.webp"
       },
       {
         "name": "Beartooth Wilderness Area",
@@ -14,7 +14,7 @@
         "citystatezip": "Red Lodge, MT 59718",
         "phone": "(406) 446-2103",
         "websiteURL": "https://www.fs.usda.gov/recarea",
-        "imageURL": "images/directoryab.png"
+        "imageURL": "images/directoryab.webp"
       },
       {
         "name": "AC Hotel Bozeman Downtown",
@@ -22,7 +22,7 @@
         "citystatezip": "Bozeman, MT 59718",
         "phone": "(406) 602-1072",
         "websiteURL": "http://www.marriott.com/bznar",
-        "imageURL": "images/directoryac.png"
+        "imageURL": "images/directoryac.webp"
       },
       {
         "name": "Albertsons",
@@ -30,7 +30,7 @@
         "citystatezip": "Bozeman, MT 59718",
         "phone": "(406) 586-4785",
         "websiteURL": "http://www.albertsons.com/",
-        "imageURL": "images/directoryalbertsons.png"
+        "imageURL": "images/directoryalbertsons.webp"
       },
       {
         "name": "Computer & Robotics Museum",
@@ -38,7 +38,7 @@
         "citystatezip": "Bozeman, MT 59718",
         "phone": "(406) 582-1288",
         "websiteURL": "https://acrmuseum.org/",
-        "imageURL": "images/directorymuseum.png"
+        "imageURL": "images/directorymuseum.webp"
       },
       {
         "name": "Riverside Country Club",
@@ -46,7 +46,7 @@
         "citystatezip": "Bozeman, MT 59718",
         "phone": "(406) 587-5105",
         "websiteURL": "http://www.riverside-country-club.com/",
-        "imageURL": "images/directoryriverside.png"
+        "imageURL": "images/directoryriverside.webp"
       },
       {
         "name": "Architect's Wife",
@@ -54,7 +54,7 @@
         "citystatezip": "Bozeman, MT 59718",
         "phone": "(406) 577-2000",
         "websiteURL": "http://architectswife.com/",
-        "imageURL": "images/directoryaw.png"
+        "imageURL": "images/directoryaw.webp"
       },
       {
         "name": "Arts On Fire",
@@ -62,7 +62,7 @@
         "citystatezip": "Bozeman, MT 59718",
         "phone": "(406) 586-8081",
         "websiteURL": "http://www.artsonfirebozeman.com/",
-        "imageURL": "images/directoryart.png"
+        "imageURL": "images/directoryart.webp"
       },
       {
         "name": "Backcountry Adventures",
@@ -70,7 +70,7 @@
         "citystatezip": "West Yellowstone, MT 59719",
         "phone": "(406) 646-9317",
         "websiteURL": "http://www.backcountry-adventures.com/",
-        "imageURL": "images/directorybackcountry.png"
+        "imageURL": "images/directorybackcountry.webp"
       },
       {
         "name": "Bannack State Park",
@@ -78,7 +78,7 @@
         "citystatezip": "Dillon, MT 59710",
         "phone": "(406) 834-3413",
         "websiteURL": "http://bannack.org/",
-        "imageURL": "images/directorypark.png"
+        "imageURL": "images/directorypark.webp"
       },
       {
         "name": "Barefoot Bozeman",
@@ -86,7 +86,7 @@
         "citystatezip": "Bozeman, MT 59718",
         "phone": "(406) 587-0760",
         "websiteURL": "http://www.barefootcampusoutfitter.com/",
-        "imageURL": "images/directorybarefoot.png"
+        "imageURL": "images/directorybarefoot.webp"
       },
       {
         "name": "Big Sky Resort",
@@ -94,7 +94,7 @@
         "citystatezip": "Big Sky, MT 597112",
         "phone": "(406) 995-5000",
         "websiteURL": "http://www.bigskyresort.com/",
-        "imageURL": "images/directorybigsky.png"
+        "imageURL": "images/directorybigsky.webp"
       }
     ]
   }

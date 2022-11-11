@@ -22,7 +22,7 @@ function displayCard(card){
     let cardview = document.querySelector('#cardview');
     let cardelt = document.createElement("div");
     cardelt.innerHTML=
-    `<img src= "${card.imageURL}">
+    `<img src= "${card.imageURL}" alt="${card.name}">
     <h3>${card.name}</h3>
     <p>${card.street} ${card.citystatezip}</p>
     <p>${card.phone}</p>
