@@ -201,6 +201,7 @@ footer{
     left: 40px;
     background-color: rgb(6, 6, 74);
     color: white;
+    border: 1.5px solid white;
     border-radius: 12px;
     padding: 10px;
 }
@@ -225,6 +226,7 @@ footer{
     left: 40px;
     background-color: rgb(6, 6, 74);
     color: white;
+    border: 1.5px solid white;
     border-radius: 12px;
     padding: 10px
 }
@@ -268,6 +270,7 @@ footer{
     padding: 10px;
     background-color: rgb(6, 6, 74);
     color: white;
+    border: 1.5px solid white;
     border-radius: 12px;
 }
 /*----------------DISCOVER PAGE----------------*/
@@ -396,9 +399,75 @@ form label.top input:required:valid{
 #ThankYouMain{
     display:inline;
 }
+
+/*----------------DIRECTORY PAGE----------------*/
+#directoryMain{
+    width: 100%;
+    margin: 0 auto;
+}
+#bizheader h2{
+    padding: 20px;
+    background-color: rgb(6, 6, 74);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+#bizheader button{
+    padding: 5px;
+}
+#bizheader{
+    text-align: center;
+}
+#directoryMain h3{
+    font-size: 18pt;
+}
+#directoryMain #cardview{
+    display: grid
+}
+#cardview {
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+}
+#listview{
+    display: none;
+}
+#cardview div{
+    border: 2px solid rgb(6, 6, 74);
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    width: 300px;
+    margin: 30px;
+}
+#cardview div img{
+    height: 200px;
+    width: 180px;
+}
+#listview table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    overflow: hidden;
+    margin-top:30px;
+}
+#listview h3{
+    font-size: 18pt;
+    background-color: green;
+}
+tr:nth-child(odd) {
+    background-color: rgba(173, 216, 230, 0.3);
+}
+tr td{
+    padding: 5px
+}
+#directoryFooter{
+    margin-top: 60px;
+}
+
 /* the medium size */
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 920px){
     header{
         display: grid;
         grid-template-columns: 20% 45% 20% 15%;
@@ -580,14 +649,28 @@ form label.top input:required:valid{
         margin: 50px;
     }
     #discoverFooter{
-        margin-top: 50px
+        margin-top: 50px;
     }
 /*----------------Join page----------------*/
     #joinFooter{
-        margin-top: 50px
+        margin-top: 50px;
     }
     form label.top input, form textarea.business{
-        max-width: 30rem
+        max-width: 30rem;
+    }
+/*----------------DIRECTORY PAGE----------------*/
+    #directoryMain{
+        display:inline;
+        justify-content: center;
+        margin: 20px
+    }
+    #cardview{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    #directoryFooter{
+        margin-top: 50px;
     }
 }
 /* the large size */
@@ -738,6 +821,9 @@ form label.top input:required:valid{
         width: 100%;
         object-fit: contain;
     }
+    #hero button{
+        bottom: 175px
+    }
     #spotlight1 h2, #spotlight2 h2, #spotlight3 h2{
         left: 20px;
         font-size: 15pt;
@@ -778,4 +864,23 @@ form label.top input:required:valid{
     form{
         margin-right: 100px
     }   
+/*----------------DIRECTORY PAGE----------------*/
+    #cardview{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+    #cardview div{
+        padding: 30px;
+        margin: 20px
+    }
+    #listview{
+        font-size:15pt
+    }
 } 
+/* The small view of directory page */
+@media only screen and (max-width: 920px){
+    tr td {
+        display: block;
+    }
+}

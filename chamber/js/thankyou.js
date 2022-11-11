@@ -1,9 +1,3 @@
-var currentdateobj = document.querySelector('#currentdate');
-var joinloaddate = new Date();
-currentdateobj.value = joinloaddate.toLocaleString();
-
-//REGULAR JS
-
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
 // derive the current date using a date object

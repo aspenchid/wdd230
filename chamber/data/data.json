@@ -1,0 +1,100 @@
+{
+    "businesses": [
+      {
+        "name": "320 Ranch",
+        "street": "205 Buffalo Horn Creek",
+        "citystatezip": "Bozeman, MT 59718",
+        "phone": "(800) 243-0320",
+        "websiteURL": "http://www.320ranch.com/",
+        "imageURL": "images/directory320.png"
+      },
+      {
+        "name": "Absaroka-Beartooth Wilderness Area",
+        "street": "6811 US-212",
+        "citystatezip": "Red Lodge, MT 59718",
+        "phone": "(406) 446-2103",
+        "websiteURL": "https://www.fs.usda.gov/recarea",
+        "imageURL": "images/directoryab.png"
+      },
+      {
+        "name": "AC Hotel Bozeman Downtown",
+        "street": "110 No. Tracy Ave.",
+        "citystatezip": "Bozeman, MT 59718",
+        "phone": "(406) 602-1072",
+        "websiteURL": "http://www.marriott.com/bznar",
+        "imageURL": "images/directoryac.png"
+      },
+      {
+        "name": "Albertsons #2006",
+        "street": "200 S. 23rd Ave. - Ste. C",
+        "citystatezip": "Bozeman, MT 59718",
+        "phone": "(406) 586-4785",
+        "websiteURL": "http://www.albertsons.com/",
+        "imageURL": "images/directoryalbertsons.png"
+      },
+      {
+        "name": "American Computer & Robotics Museum",
+        "street": "2023 Stadium Dr., Unit 1-A",
+        "citystatezip": "Bozeman, MT 59718",
+        "phone": "(406) 582-1288",
+        "websiteURL": "https://acrmuseum.org/",
+        "imageURL": "images/directorymuseum.png"
+      },
+      {
+        "name": "Riverside Country Club",
+        "street": "2500 Springhill Road",
+        "citystatezip": "Bozeman, MT 59718",
+        "phone": "(406) 587-5105",
+        "websiteURL": "http://www.riverside-country-club.com/",
+        "imageURL": "images/directoryriverside.png"
+      },
+      {
+        "name": "Architect's Wife",
+        "street": "23 W. Babcock St.",
+        "citystatezip": "Bozeman, MT 59718",
+        "phone": "(406) 577-2000",
+        "websiteURL": "http://architectswife.com/",
+        "imageURL": "images/directoryaw.png"
+      },
+      {
+        "name": "Arts On Fire",
+        "street": "200 S. 23rd Ave - Ste. A-1",
+        "citystatezip": "Bozeman, MT 59718",
+        "phone": "(406) 586-8081",
+        "websiteURL": "http://www.artsonfirebozeman.com/",
+        "imageURL": "images/directoryart.png"
+      },
+      {
+        "name": "Backcountry Adventures",
+        "street": "224 N. Electric St.",
+        "citystatezip": "West Yellowstone, MT 59719",
+        "phone": "(406) 646-9317",
+        "websiteURL": "http://www.backcountry-adventures.com/",
+        "imageURL": "images/directorybackcountry.png"
+      },
+      {
+        "name": "Bannack State Park",
+        "street": "4200 Bannack Road",
+        "citystatezip": "Dillon, MT 59710",
+        "phone": "(406) 834-3413",
+        "websiteURL": "http://bannack.org/",
+        "imageURL": "images/directorypark.png"
+      },
+      {
+        "name": "Barefoot Bozeman",
+        "street": "131 W. Main St",
+        "citystatezip": "Bozeman, MT 59718",
+        "phone": "(406) 587-0760",
+        "websiteURL": "http://www.barefootcampusoutfitter.com/",
+        "imageURL": "images/directorybarefoot.png"
+      },
+      {
+        "name": "Big Sky Resort",
+        "street": "50 Big Sky Resort Road",
+        "citystatezip": "Big Sky, MT 597112",
+        "phone": "(406) 995-5000",
+        "websiteURL": "http://www.bigskyresort.com/",
+        "imageURL": "images/directorybigsky.png"
+      }
+    ]
+  }

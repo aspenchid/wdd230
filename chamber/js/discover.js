@@ -38,7 +38,6 @@ window.localStorage.setItem("last-visit", todayDate.toString());
 
 
 //lazy loader 
-
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const loadImages = (image) => {
