@@ -414,6 +414,8 @@ form label.top input:required:valid{
 }
 #bizheader button{
     padding: 5px;
+    height: 50;
+    width: 50;
 }
 #bizheader{
     text-align: center;
