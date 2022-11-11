@@ -441,8 +441,8 @@ form label.top input:required:valid{
     margin: 30px;
 }
 #cardview div img{
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
 }
 #listview table {
     width: 90%;
