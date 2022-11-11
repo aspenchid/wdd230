@@ -33,7 +33,7 @@ function displayCard(card){
 function displayList(biz){
     let card = document.createElement('tr');
     card.innerHTML = 
-    `<td>${biz.name}</td>
+    `<h3>${biz.name}</h3>
     <td>${biz.street}<br>${biz.citystatezip}</td>
     <td>${biz.phone}</td>
     <td><a href="${biz.websiteURL}">${biz.websiteURL}</a></td>`

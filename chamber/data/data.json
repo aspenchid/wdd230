@@ -9,7 +9,7 @@
         "imageURL": "images/directory320.png"
       },
       {
-        "name": "Absaroka-Beartooth Wilderness Area",
+        "name": "Beartooth Wilderness Area",
         "street": "6811 US-212",
         "citystatezip": "Red Lodge, MT 59718",
         "phone": "(406) 446-2103",
@@ -25,7 +25,7 @@
         "imageURL": "images/directoryac.png"
       },
       {
-        "name": "Albertsons #2006",
+        "name": "Albertsons",
         "street": "200 S. 23rd Ave. - Ste. C",
         "citystatezip": "Bozeman, MT 59718",
         "phone": "(406) 586-4785",
@@ -33,7 +33,7 @@
         "imageURL": "images/directoryalbertsons.png"
       },
       {
-        "name": "American Computer & Robotics Museum",
+        "name": "Computer & Robotics Museum",
         "street": "2023 Stadium Dr., Unit 1-A",
         "citystatezip": "Bozeman, MT 59718",
         "phone": "(406) 582-1288",

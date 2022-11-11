@@ -453,7 +453,8 @@ form label.top input:required:valid{
 }
 #listview h3{
     font-size: 18pt;
-    background-color: green;
+    font-weight:300;
+    margin-left: 10px
 }
 tr:nth-child(odd) {
     background-color: rgba(173, 216, 230, 0.3);
