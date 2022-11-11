@@ -470,6 +470,10 @@ tr td{
 #directoryFooter{
     margin-top: 60px;
 }
+#directoryFooter a img{
+    height: 50px;
+    width: 50px;
+}
 
 /* the medium size */
 
