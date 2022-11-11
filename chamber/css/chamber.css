@@ -412,10 +412,10 @@ form label.top input:required:valid{
     border-radius: 12px;
     text-align: center;
 }
-#bizheader button{
+#bizheader img{
     padding: 5px;
-    height: 50;
-    width: 50;
+    height: 50px;
+    width: 50px;
 }
 #bizheader{
     text-align: center;
@@ -430,6 +430,7 @@ form label.top input:required:valid{
     text-align: center;
     justify-content: center;
     place-items: center;
+    height:100%;
 }
 #listview{
     display: none;
@@ -441,6 +442,8 @@ form label.top input:required:valid{
     text-align: center;
     width: 300px;
     margin: 30px;
+    min-height: 500px;
+    min-width: 200px;
 }
 #cardview div img{
     height: 100%;
