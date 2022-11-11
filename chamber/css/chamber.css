@@ -31,7 +31,7 @@ header p:nth-child(1){
 }
 .logo1 {
     width: 60%;
-    height: auto;
+    height: 277;
     padding: 1em;
     grid-row: 2/3;
 }
@@ -45,7 +45,7 @@ header p:nth-child(1){
 }
 .social-media{
     width: 40%;
-    height: auto;
+    height: 130;
 }
 .socials{
     padding: 1em;
@@ -124,7 +124,7 @@ nav ul.open{
 }
 .logo2{
     width: 20%;
-    height: auto;
+    height: 277;
     padding: 1em;
 } 
 .textbox{
