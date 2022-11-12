@@ -424,7 +424,10 @@ form label.top input:required:valid{
     font-size: 18pt;
 }
 #directoryMain #cardview{
-    display: grid
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
 #cardview {
     text-align: center;
@@ -437,13 +440,12 @@ form label.top input:required:valid{
 }
 #cardview div{
     border: 2px solid rgb(6, 6, 74);
-    background-color: white;
     padding: 50px;
     text-align: center;
     width: 300px;
     margin: 30px;
     min-height: 500px;
-    min-width: 200px;
+    min-width: 200px; 
 }
 #cardview div img{
     height: 100%;
@@ -674,11 +676,6 @@ tr td{
         justify-content: center;
         margin: 20px
     }
-    #cardview{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-    }
     #directoryFooter{
         margin-top: 50px;
     }
@@ -875,11 +872,6 @@ tr td{
         margin-right: 100px
     }   
 /*----------------DIRECTORY PAGE----------------*/
-    #cardview{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        place-items: center;
-    }
     #cardview div{
         padding: 30px;
         margin: 20px
