@@ -16,7 +16,12 @@ x.onclick = toggleMenu;
 const today = new Date();
 document.querySelector("footer div span").textContent = today.getFullYear();
 
-
+if (today.getDay() == 1){
+    document.querySelector("header p").style.display="block";
+}
+if (today.getDay() == 2){
+    document.querySelector("header p").style.display="block";
+}
 
 // this is how you test if this is working it will be how many days 
 // window.localStorage.setItem("last-visit", new Date("12/03/2003"))

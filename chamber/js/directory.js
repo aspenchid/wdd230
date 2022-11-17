@@ -4,14 +4,14 @@ let cardview = document.querySelector('#cardview');
 let listview = document.querySelector('#listview');
 
 cardselector.addEventListener('click',()=>{
-    cardview.style.display = 'grid';
+    cardview.style.display = 'flex';
     listview.style.display = 'none';
     cardselector.style.opacity = 1.0;
     listselector.style.opacity = 0.5;
 });
 listselector.addEventListener('click', ()=>{
     cardview.style.display = 'none';
-    listview.style.display = 'block';
+    listview.style.display = 'flex';
     cardselector.style.opacity = 0.5;
     listselector.style.opacity = 1.0;
 });

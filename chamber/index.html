@@ -20,8 +20,8 @@
                 <div class='caption'>Chamber of Commerce</div>
             </section>
             <div class="socials">
-                <img class="social-media" src="images/instagram.png" alt='Instagram logo'>
-                <img class="social-media" src="images/facebook.png" alt='Facebook logo'>
+                <a target="_blank" href="https://instagram.com"><img class="social-media" src="images/instagram.png" alt='Instagram logo'></a>
+                <a target="_blank" href="https://facebook.com"><img class="social-media" src="images/facebook.png" alt='Facebook logo'></a>
             </div>  
             <nav id="entireNav">
                 <button id="hamburgerBtn"><span>&#9776;</span><span>𝗑</span></button>
@@ -55,6 +55,11 @@
             <div class="textbox notspotlight" id="weather">
                 <h2>Weather</h2>
                 <h2><span id="temperature"></span>&deg; F</h2>
+                <span id="icon-src"></span>
+                <figure>
+                    <img src="" alt="" id="weathericon"/>  
+                    <figcaption></figcaption>
+                </figure>
                 <img src="images/cloudy.png" alt="Cloudy weather">
                 <hr>
                 <h3>Wind Speed: <span id="windspeed"></span> mph</h3>
@@ -122,5 +127,6 @@
         </footer>
     </div>
     <script src="js/chamber.js"></script>
+    <script src="js/weatherapi.js"></script>
 </body>
 </html>
