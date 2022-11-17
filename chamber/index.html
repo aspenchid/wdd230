@@ -54,16 +54,15 @@
             </div>
             <div class="textbox notspotlight" id="weather">
                 <h2>Weather</h2>
-                <h2><span id="temperature"></span>&deg; F</h2>
-                <span id="icon-src"></span>
                 <figure>
-                    <img src="" alt="" id="weathericon"/>  
+                    <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="weather" id="weathericon"/>  
                     <figcaption></figcaption>
                 </figure>
-                <img src="images/cloudy.png" alt="Cloudy weather">
+                <h2><span id="temperature"></span>&deg; F</h2>
                 <hr>
                 <h3>Wind Speed: <span id="windspeed"></span> mph</h3>
                 <h3>Wind Chill: <span id="windchill"></span></h3>
+                <!-- <span id="icon-src"></span> -->
             </div>
             <div class="textbox notspotlight" id="newsrelease">
                 <h2>News Release</h2>
@@ -114,6 +113,7 @@
             <div class="section1">
             <h3>Montana Peak Chamber of Commerce</h3>
             <p>2000 Commerce Way, Bozeman, MT 59715</p>
+            <p>Weather Source: https://openweathermap.org/city/5641727</p>
             </div>
             <div class="section2">
             <p>info@montanapeakchamber.org</p>
@@ -128,6 +128,5 @@
         </footer>
     </div>
     <script src="js/chamber.js"></script>
-    <script src="js/weatherapi.js"></script>
 </body>
 </html>

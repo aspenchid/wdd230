@@ -29,18 +29,34 @@ const LAT = "45.6796"
 const LON = "-111.0386"
 const APIKEY = "bc939b822600673b6ecf722eecb35b28"
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
+
+
 function showWeather(obj){
   let currenttemp = document.querySelector('#temperature');
-  let iconpath = document.querySelector('#icon-src');
+//   let iconpath = document.querySelector('#icon-src');
   let weathericon = document.querySelector('#weathericon');
   let figurecaption = document.querySelector('figcaption');
+  let windspeedobj = document.querySelector("#windspeed");
+  let windchillobj = document.querySelector("#windchill");
   const iconURL = `http://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`;
-  currenttemp.textContent = obj.main.temp;
-  iconpath.textContent = iconURL
+
+  let windchillmsg = "N/A";
+  let temp = obj.main.temp;
+  let windspeed = obj.wind.speed;
+
+  if (temp <= 50 && windspeed > 3){
+      let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
+      windchillmsg = `${chill}&deg; F`
+  }
+  currenttemp.textContent = Math.round(temp);
+  windchillobj.innerHTML = windchillmsg;
+  windspeedobj.textContent = Math.round(windspeed);
+//   iconpath.textContent = iconURL
+  figurecaption.textContent = obj.weather[0].main;
   weathericon.setAttribute('src', iconURL);
   weathericon.setAttribute('alt', obj.weather[0].description);
-  figurecaption.textContent = obj.weather[0].main
 }
+
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -50,24 +66,32 @@ fetch(apiURL)
 
 //ROUND THE WEATHER
 
+// function showWeather(obj){
+//     let tempobj = document.querySelector("#temperature");
+//     let winchill = 'N/A';
+//     let windchillmsg = "N/A";
 
-function setwindchill(temp, windspeed){
-    let tempobj = document.querySelector("#temperature");
-    let windspeedobj = document.querySelector("#windspeed");
-    let windchillobj = document.querySelector("#windchill");
-
-    let windchillmsg = "N/A";
-
-    if (temp <= 50 && windspeed > 3){
-        let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
-        windchillmsg = `${chill}&deg; F`
-    }
-
-    tempobj.textContent = temp;
-    windspeedobj.textContent = windspeed;
-    windchillobj.innerHTML = windchillmsg;
-}
-setwindchill(49, 10)
-
+//     if (temp <= 50 && windspeed > 3){
+//         let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
+//         windchillmsg = `${chill}&deg; F`
+//     }
+//     tempobj.textContent = temp;
+//     windspeedobj.textContent = windspeed;
+//     windchillobj.innerHTML = windchillmsg;
+// }
+// function setwindchill(temp, windspeed){
+//     let tempobj = document.querySelector("#temperature");
+//     let windspeedobj = document.querySelector("#windspeed");
+//     let windchillobj = document.querySelector("#windchill");
+//     let windchillmsg = "N/A";
+//     if (temp <= 50 && windspeed > 3){
+//         let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
+//         windchillmsg = `${chill}&deg; F`
+//     }
+//     tempobj.textContent = temp;
+//     windspeedobj.textContent = windspeed;
+//     windchillobj.innerHTML = windchillmsg;
+// }
+// setwindchill(49, 10)
 
 document.getElementById("lastupdated").textContent = document.lastModified;
