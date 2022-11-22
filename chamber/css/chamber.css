@@ -163,6 +163,7 @@ footer{
 }
 #hero{
     display: flex;
+    justify-content: center;
 }
 #hero img{
     justify-content: center;
@@ -181,12 +182,13 @@ footer{
     border-radius: 12px;
     background-color: lightblue;
     color: rgb(6, 6, 74);
-    padding: 5px;
+    padding: 10px;
     font-size: 15pt;
     position: absolute;
-    right: 40px;
-    bottom: 50px;
     box-shadow: 0px 0px 2px 2px rgb(6, 6, 74);
+    bottom: 10px;
+    left: 15px;
+    right: 20px;
 }
 #hero button:hover{
     background-color: white;
@@ -201,6 +203,7 @@ footer{
     border: 1.5px solid white;
     border-radius: 12px;
     padding: 10px;
+    font-size: 21pt;
 }
     /* this is how to get the image to fit in the center of the div */
 #hero img{
@@ -225,7 +228,8 @@ footer{
     color: white;
     border: 1.5px solid white;
     border-radius: 12px;
-    padding: 10px
+    padding: 10px;
+    font-size: 21pt;
 }
 #weather{
     position: relative;
@@ -248,6 +252,12 @@ figcaption{
 #newsrelease{
     background-color: rgb(6, 6, 74);
     color: white;
+}
+#newsrelease h2{
+    font-size: 26pt;
+}
+#weather h2{
+    font-size: 26pt;
 }
 #spotlights{
     background-color: rgb(6, 6, 74);
@@ -274,6 +284,7 @@ figcaption{
     color: white;
     border: 1.5px solid white;
     border-radius: 12px;
+    font-size: 17pt;
 }
 /*----------------DISCOVER PAGE----------------*/
 #discoverMain{
@@ -540,7 +551,9 @@ tr td{
         display: grid;
         grid-template-columns: 50% 5% 45%;
         grid-template-rows: 30% 15% 25% 10% 20%;
-        grid-gap: 2.25em 0em 
+        grid-gap: 2.25em 0em;
+        margin-left: 40px;
+        margin-right: 40px
     }
     #hero{
         grid-column: 1/4;
@@ -601,7 +614,7 @@ tr td{
         height: 100%;
         grid-column: 3/4;
         grid-row: 5/6;
-        margin: 20px 20px 10px 10px
+        margin: 27px 20px 0px 10px
     }
     figcaption{
         font-size: 25pt;
@@ -645,10 +658,10 @@ tr td{
     .location{
         width:15%;
     }
-    #hero button{
-        right: 50px;
-        bottom: 100px;
-        font-size: 25px;
+    #hero a button{
+        /* right: 50px;
+        top: 500px; */
+        justify-self: center;
     }
     #join button{
         border-radius: 12px;
@@ -796,7 +809,7 @@ tr td{
     main{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 30% 35% 30%;
         grid-gap: 2.25em 0;
         margin: 0 100px 0 100px;
         font-size: 10pt;
@@ -825,6 +838,12 @@ tr td{
         margin: 1em 0.25em 1em 0.25em;
         border: none;
         border-bottom: solid white;
+    }
+    #hero button{
+        font-size: 20pt;
+        bottom: 80px;
+        left: 15px;
+        right: 20px;
     }
     #spotlights{
         display:grid;
@@ -896,9 +915,6 @@ tr td{
         height:100%;
         width: 100%;
         object-fit: contain;
-    }
-    #hero button{
-        bottom: 175px
     }
     #spotlight1 h2, #spotlight2 h2, #spotlight3 h2{
         left: 20px;
