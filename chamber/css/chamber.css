@@ -317,6 +317,11 @@ figcaption{
 #discoverMain ul li{
     padding: 5px;
 }
+.bozemanPictures p{
+    background-color: rgb(173, 216, 230);
+    border-radius: 12px;
+    padding: 20px
+}
 /*----------------JOIN PAGE----------------*/
 #joinMain{
     display:block;
@@ -719,6 +724,15 @@ tr td{
     #discoverFooter{
         margin-top: 50px;
     }
+    .bozemanPictures{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        }
+    .bozemanPictures img{
+        height: 240px;
+        width: auto
+    }
 /*----------------Join page----------------*/
     #joinFooter{
         margin-top: 50px;
@@ -937,6 +951,15 @@ tr td{
 /*----------------Discover page----------------*/
     .bozemanPictures img:hover{
         box-shadow: 0 0 50px #333;
+    }
+    .bozemanPictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 200px;
+    }
+    .bozemanPictures img{
+        height: 240px;
+        width: auto
     }
 /*----------------Join page----------------*/
     #joinMain{
