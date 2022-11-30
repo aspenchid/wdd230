@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Cinzel:wght@500&display=swap');
+#content{
+    font-family: 'Anek Devanagari', sans-serif;
+    margin: 0 auto;
+}
+main{
+    margin: 100px;
+}
+header{
+    margin: 30px
+}
+h1, h2, h3{
+    font-family: 'Cinzel', serif;
+}
+#subHeading{
+    color:rgb(104, 63, 70)
+}
+#specialPara{
+    background-color:rgb(253, 233, 236);
+    /* how to get something to be the background of just the text */
+    display:table;
+    border-radius: 12px;
+    padding: 10px;
+}
+#nav{
+    color:rgb(253, 233, 236);
+    background-color: black;
+    /* how to get something to be the background of just the text */
+    display: inline-flex;
+    border-radius: 12px;
+    padding: 10px;
+}
+footer{
+    background-color: rgb(253, 233, 236);
+    text-align: center;
+    padding: 50px
+}
+section{
+    border: 1.5px solid black;
+    margin: 10px;
+    padding: 20px
+}
+main img{
+    width: 500px;
+    height:auto
+}
