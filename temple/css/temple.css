@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Cinzel:wght@500&display=swap');
+#content{
+    font-family: 'Anek Devanagari', sans-serif;
+    margin: 0 auto;
+    font-size: 12px;
+}
+h1, h2, h3, nav{
+    font-family: 'Cinzel', serif;
+}
+.logo{
+    width: 60px;
+    height: auto;
+} 
+header{
+    background-color: rgb(253, 233, 236);
+    position:fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+}
+header img{
+    position: absolute;
+}
+header h1{
+    position: relative;
+    left: 100px;
+    width: 60%;
+    text-align: center;
+}
+nav button{
+    border: 1pt solid black;
+    font-size: 20pt;
+    background-color:rgb(253, 233, 236);
+    float: right;
+    margin-top: -50px;
+    margin-right: 10px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+	text-align: center;
+	padding: 10px;
+	font-size: 0.95rem;
+	transition: 0.3s;
+}
+nav a:hover{
+    background-color: black;
+    color: rgb(253, 233, 236);
+}
+.active{
+    background-color: white;
+}
+nav ul{
+    display: none;
+}
+nav ul.open{
+    display: block;
+}
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+#hamburgerBtn span:nth-child(2){
+    display: none;
+    padding: 0 5.2px 0 5.2px
+}
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+}
+
+@media only screen and (min-width: 920px){
+    #content{
+        font-size: 15px;
+    }
+    nav button{
+        margin-top: -55px;
+    }
+    header img{
+    margin: 7px 0 0 7px
+    }
+}
+
+@media only screen and (min-width: 1250px){
+    #content{
+        font-size: 17px;
+    }
+    #primaryNav{
+        display: grid;
+        grid-template-columns:repeat(auto-fill, minmax(130px, 1fr));
+        grid-template-columns: repeat(7, 1fr);
+
+    }
+    nav button{
+        display: none;
+    }
+    header img{
+        margin: 12px 0 0 12px
+    }
+    header h1{
+        width: 30%;
+        margin-right: 0px;
+        display: inline-flex;
+    }
+    ul#primaryNav{
+        float:right;
+        margin-top: -60px;
+        position:relative;
+        top: 0;
+    }
+    nav ul li a {
+        padding: 10px 5px 10px 5px;
+    }
+}
