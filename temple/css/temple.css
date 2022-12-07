@@ -4,7 +4,7 @@
     margin: 0 auto;
     font-size: 11px;
 }
-h1, h2, h3, nav{
+h1, h2, h3, h4, nav{
     font-family: 'Cinzel', serif;
 }
 .logo, .logo2{
@@ -80,7 +80,6 @@ nav ul.open{
 .img1{
     width: 1450px;
     height: auto;
-    margin-top: 50px;
     /* how to center the image */
     display: block;
     margin-left: auto;
@@ -88,6 +87,9 @@ nav ul.open{
     /* how to make images responsive */
     max-width: 100%;
     position: relative;
+}
+main{
+    margin-top: 50px;
 }
 .social1, .social2, .social3{
     position: absolute;
@@ -107,6 +109,122 @@ nav ul.open{
     top: 75px;
     left:92px
 }
+.book button{
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    border-radius: 12px;
+    color: white;
+    background-color:rgb(104, 63, 70);
+    padding: 10px;
+}
+.book button:hover{
+    transition: 1s;
+    background-color: black;
+}
+#body{
+    margin:50px;
+    text-align: center;
+}
+#sltemple{
+    width: 300px;
+    height: auto;
+    margin: auto;
+}
+#templewedding{
+    width: 300px;
+    height: auto;
+    margin: auto;
+}
+#weather{
+    background-color: rgb(104, 63, 70);
+    border-radius: 12px;
+    color:white;
+    padding: 50px;
+    margin: 15px 30px 15px 30px
+}
+#connect{
+    padding: 50px;
+    margin: 15px;
+}
+#connect h2, #update h2{
+    background-color: rgb(253, 233, 236);
+    padding: 30px;
+    border-radius: 12px;
+}
+#update{
+    padding: 50px;
+    margin: 15px;
+}
+#reservation{
+    background-color: rgb(104, 63, 70);
+    color: white;
+    border-radius: 12px;
+    padding: 50px;
+    margin: 15px 30px 15px 30px;
+    height: 150px;
+    margin-top: auto;
+    margin-bottom: auto
+}
+#highlight{
+    padding: 50px;
+}
+#activities{
+    padding: 50px;
+}
+/* ----------------------------------------temple */
+#templeMain{
+    margin-top: 100px;
+    text-align: center;
+}
+#templeMain button img{
+    width: 30px;
+    height: auto;
+}
+#templeMain button{
+    margin: 5px;
+}
+#cardview img{
+    width: 400px;
+    height: auto;
+}
+#cardview div{
+    background-color: rgb(104, 63, 70);
+    padding: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.3);
+    margin: 30px;
+    text-align: center;
+}
+#cardview{
+    margin-bottom: 100px;
+}
+#listview{
+    display: none;
+}
+#listview table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: 100px;
+}
+tr:nth-child(odd) {
+    background-color: rgba(253, 233, 236, 0.4);
+}
+#listview table tr{
+    display: block;
+    padding: 5px;
+}
+#listview table td{
+    display: block;
+    padding: 5px;
+}
+#listview #tableheader{
+    display: none;
+}
+/* ----------------------------------------footer */
 footer{
     background-color: rgb(253, 233, 236);
     text-align: center;
@@ -128,12 +246,16 @@ div.phone{
     background-color:white;
     display: inline-flex;
     padding: 15px 10px 10px 10px;
-    margin: 5px
+    margin: 5px;
+    border-radius: 12px;
 }
 .gps{
     width: 30px
 }
 @media only screen and (min-width: 920px){
+    header h1{
+        margin-left: -150px;
+    }
     #content{
         font-size: 15px;
     }
@@ -141,14 +263,86 @@ div.phone{
         margin-top: -55px;
     }
     header img{
-    margin: 7px 0 0 7px
+        margin: 7px 0 0 7px;
     }
-    .img1{
+    main{
         margin-top: 75px;
     }
     .social1, .social2, .social3{
         top: 90px
     }
+    .book button{
+        top: 90px;
+        padding: 15px 10px 10px 10px;
+    }
+    #body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #sltemple{
+        width: 400px;
+        height: auto;
+    }
+    #templewedding{
+        width: 400px;
+        height: auto;
+    }
+    #highlight{
+        padding: 50px;
+    }
+    #activities{
+        padding: 50px;
+    }
+    #templewedding{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #weather{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    #reservation{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+/* ----------------------------------------temple */
+    #templeMain h2{
+        margin: 150px 0 50px 0;
+    }
+    #cardview{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 150px
+    }
+    #cardview img{
+        width: 300px;
+    }
+    #listview table{
+        margin: 30px 0 100px 60px;
+    }
+    #listview table tr{
+        display: table-row;
+        padding: 30px;
+    }
+    #listview table td{
+        display: table-cell;
+        padding: 30px;
+    }
+    #listview table h3{
+        padding: 30px;
+    }
+    #listview table th{
+        padding: 30px;
+        font-size: 15pt;
+        font-family: 'Cinzel', serif;
+        background-color: rgba(104, 63, 70, 0.9);
+        color: white;
+        text-align: left;
+    }
+    #listview #tableheader{
+        display: table-row;
+    }
+/* ----------------------------------------footer */
     footer{
         text-align: left;
         display: grid;
@@ -199,6 +393,9 @@ div.phone{
 }
 
 @media only screen and (min-width: 1250px){
+    header h1{
+        margin-left: 0px;
+    }
     #content{
         font-size: 17px;
     }
@@ -228,12 +425,77 @@ div.phone{
     nav ul li a {
         padding: 10px 5px 10px 5px;
     }
-    .img1{
+    main{
         margin-top: 85px;
     }
     .social1, .social2, .social3{
         top: 110px
     }
+    .book button{
+        top: 110px;
+        padding: 15px 10px 10px 10px;
+    }
+    #body{
+        grid-template-columns: 1fr 1fr;
+    }
+    #sltemple{
+        width: 600px;
+        height: auto;
+        grid-column: 2/4;
+        grid-row: 1/2;
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+    #templewedding{
+        width: 600px;
+        height: auto;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin-bottom: 100px;
+    }
+    #activities{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #weather{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #reservation{
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    #connect{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    #update{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #weather{
+        background-color: white;
+        color: black
+    }
+    #weather h2{
+        background-color: rgb(253, 233, 236);
+        color: black;
+        padding: 30px;
+        border-radius: 12px;
+    }
+/* ----------------------------------------temple */
+    #cardview{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #cardview img{
+        width: 200px;
+        height: auto;
+    }
+    #listview table{
+        margin: 30px 0 100px 70px;
+    }
+/* ----------------------------------------footer */
     footer{
         grid-template-columns: 10% 25% 15% 15% 10% 25%;
         grid-template-rows: 60% 40%;

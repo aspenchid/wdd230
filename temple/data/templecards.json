@@ -1,0 +1,40 @@
+{
+    "temples": [
+      {
+        "id": "temple1",
+        "name": "Cedar City Utah",
+        "street": "280 South Cove Dr",
+        "citystatezip": "Cedar City UT 84720",
+        "phone": "(1) 435-572-4150",
+        "dedication": "10 December 2017",
+        "imageURL": "https://assets.ldscdn.org/b2/89/b2891eb1787414ec6995a32c42d03981732c2d6a/cedar_city_utah_temple_exterior.jpeg"
+      },
+      {
+        "id": "temple2",
+        "name": "Brigham City Utah",
+        "street": "250 S Main St",
+        "citystatezip": "Brigham City UT 84302-2560",
+        "phone": "(1) 435-695-2170",
+        "dedication": "23 September 2012",
+        "imageURL": "https://assets.ldscdn.org/93/92/9392e6adee3d1aa025548de1a852a27ad8ea40f4/brigham_city_utah_temple_dawn.jpeg"
+      },
+      {
+        "id": "temple3",
+        "name": "Philadelphia Pennsylvania",
+        "street": "1739 Vine St",
+        "citystatezip": "Philadelphia PA 19103",
+        "phone": "(1) 215-398-3040",
+        "dedication": "18 September 2016",
+        "imageURL": "https://assets.churchofjesuschrist.org/f2/2a/f22a5fadd1bbf56abba42f0fdb4321ffdf3cddf8/philadelphia_pennsylvania_temple_exterior.jpeg"
+      },
+      {
+        "id": "temple4",
+        "name": "Paris France",
+        "street": "46 Boulevard Saint Antoine",
+        "citystatezip": "78150 Le Chesnay",
+        "phone": "(33) 970-73-70-00",
+        "dedication": "21 May 2017",
+        "imageURL": "https://assets.ldscdn.org/e4/bf/e4bf989d13eb500735fb2871f90c0c1cf7dde419/paris_france_temple_exterior.jpeg"
+      }
+    ]
+  }
