@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aspen Chidester in WDD 230: W12 Assignment: Website Planning Document">
+        <link rel="shortcut icon" href="images/templelogo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/temple.css">
+        <title>Temple Inn & Suites</title>
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                    <img class='logo' src="images/templelogo.png" alt="Temple Inn & Suites logo">
+                    <h1>Temple Inn & Suites</h1>
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>𝗑</span></button>
+                <ul id="primaryNav">
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='temple.html'>Temple</a></li>
+                    <li><a class='active' href='reservation.html'>Reservation</a></li>
+                    <li><a href='services.html'>Services</a></li>
+                    <li><a href='reception.html'>Reception</a></li>
+                    <li><a href='missionary.html'>Missionary</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                </ul>
+            </nav>
+            </header>
+            <main id="reservationMain">
+                <h2>Reserve a Room</h2>
+                <form method="get" action="thankyou.html">
+                    <fieldset id="roomInfo">
+                        <legend>Room Information</legend>
+                        <label class="room required">Hotel Location 
+                            <select class="room required">
+                                <option value="Paris France">Paris France</option>
+                                <option value="Brigham City Utah">Brigham City Utah</option>
+                                <option value="Philadelphia Pennsylvania">Philadelphia Pennsylvania</option>
+                                <option value="Cedar City Utah">Cedar City Utah</option>
+                            </select>
+                        </label>
+                        <label class="room required">Arrival Date * <input type="date" name="datein" value="datein" required></label>
+                        <label class="room required">Departure Date * <input type="date" name="dateout" value="dateout" required></label>
+                        <div>Type of Room</div>
+                        <label class="radio"><input type="radio" name="roomtype" value="regular">Regular</label>
+                        <label class="radio"><input type="radio" name="roomtype" value="double">Double</label>
+                        <label class="radio"><input type="radio" name="roomtype" value="balcony">Balcony</label>
+                        <label class="radio"><input type="radio" name="roomtype" value="deluxe">Deluxe Suite</label>
+                        <label class="room required">Number of rooms * <input type="number" name="rooms" value="rooms" required></label>
+                        <input id="currentdate" type="hidden" name="datetime">
+                    </fieldset>
+                    <fieldset id="applicantInfo">
+                        <legend>Applicant Information</legend>
+                        <label class="top required">First Name * <input type="text" name="fname" required></label>
+                        <label class="top required">Last Name * <input type="text" name="lname" required></label>
+                        <label class="top">Phone <input type="tel" name="phone" placeholder="1112223333"></label>
+                        <label class="top required">Email * <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">Home State or Province<input type="text" name="homestate"></label>
+                        <label class="top">Home Country<input type="text" name="homecountry"></label>
+                        <label class="top" >Special Accommodations/Comments<textarea class="comments" name="comments" cols="36" rows="5"></textarea></label>
+                    </fieldset>
+                    <input class="submitBtn" type="submit" value="Make My Reservation!">
+                </form>
+            </main>
+            <footer>
+                <img class='logo2' src="images/templelogo.png" alt="Temple Inn & Suites logo">
+                <h3 class="title">Temple Inn & Suites</h3>
+                <a class="contact" href='contact.html'><button>Contact us!</button></a>
+                <div><a target="_blank" href="https://goo.gl/maps/NKLb1nPGvew5g7Y66"><img class="gps" src="images/gps.png" alt="gps"></a></div>
+                <div class="address">4800 Montgomery Ln #300,<br>
+                        Bethesda, MD 20814</div>
+                <div class="phone">(595)-288-6794</div>
+                <p class="end1">Weather Source: https://openweathermap.org/city/5641727</p>
+                <div class="end2"> &copy; <span></span> | Aspen Chidester | WDD 230 | Last Modification: <span id="lastupdated"></span></div>
+            </footer>
+        </div>
+        <script src="js/reservation.js"></script>
+    </body>
+</html>

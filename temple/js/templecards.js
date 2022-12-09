@@ -34,8 +34,6 @@ if (likes_string==null){
     likes_string="[]";
     localStorage.setItem(LIKES_KEY, likes_string);
 }
-// Turn the string value from local storage into a Java array
-let likeslist = JSON.parse(likes_string);
 
 // show cards
 function displayCard(card){
@@ -71,6 +69,10 @@ fetch(requestURL)
     let temple = jsonObject['temples']
     temple.forEach(displayCard);
     temple.forEach(displayList);
+}).then(()=>{
+    // Turn the string value from local storage into a Java array
+    let likeslist = JSON.parse(likes_string);
+    likeslist.forEach(displayLike);
 });
 
 // like button function
@@ -89,12 +91,13 @@ function likeTemple(item){
     }
     localStorage.setItem(LIKES_KEY, JSON.stringify(likeslist));
 }
+
 // Upon page reload, the list of individual items (by id) is checked.
 function displayLike(item){
-    let obj = document.getElementsByClassName(item);
+    console.log(item);
+    let obj = document.getElementById(item);
     obj.checked = true;
 }
-likeslist.forEach(displayLike);
 
 // footer
 const today = new Date();
