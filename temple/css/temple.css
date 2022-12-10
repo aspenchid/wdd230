@@ -110,16 +110,17 @@ main{
     top: 75px;
     left:92px
 }
-.book button{
+a.book{
     position: absolute;
-    top: 70px;
-    right: 50px;
-    border-radius: 12px;
+    top: 75px;
+    right: 40px;
+    border-radius: 70px;
     color: white;
     background-color:rgb(104, 63, 70);
-    padding: 10px;
+    padding: 20px;
+    text-decoration: none;
 }
-.book button:hover{
+a.book:hover{
     transition: 1s;
     background-color: black;
 }
@@ -341,7 +342,7 @@ form input.submitBtn:hover{
 #servicesMain li{
     line-height: 20px;
 }
-#servicesMain button{
+#servicesMain a.receptionlink, a.missionarylink{
     display: block;
     border-radius: 12px;
     color: white;
@@ -350,8 +351,10 @@ form input.submitBtn:hover{
     text-decoration: none !important;
     margin: 10px 0;
     justify-self: center;
+    display: inline-block;
+    font-size: larger;
 }
-#servicesMain button:hover{
+#servicesMain a.receptionlink:hover, a.missionarylink:hover{
     transition: 1s;
     background-color: black;
 }
@@ -379,13 +382,17 @@ footer{
 footer img{
     padding: 10px;
 }
-footer button{
+footer h3.title{
+    margin-bottom: 30px;
+}
+footer a.contact{
     border-radius: 12px;
     color: white;
     background-color:rgb(104, 63, 70);
-    padding: 10px;
+    padding: 12px;
+    text-decoration: none;
 }
-footer button:hover {
+footer a.contact:hover {
     transition: 1s;
     background-color: black;
 }
@@ -397,7 +404,8 @@ div.phone{
     border-radius: 12px;
 }
 .gps{
-    width: 30px
+    width: 30px;
+    margin-top:15px
 }
 @media only screen and (min-width: 920px){
     header h1{
@@ -418,9 +426,9 @@ div.phone{
     .social1, .social2, .social3{
         top: 90px
     }
-    .book button{
-        top: 90px;
-        padding: 15px 10px 10px 10px;
+    a.book{
+        top:90px;
+        padding: 25px
     }
     #body{
         display: grid;
@@ -527,6 +535,7 @@ div.phone{
         grid-row: 1/2;
     }
     .gps{
+        margin-top:0;
         margin-left: 25px;
         grid-column: 3/4;
         grid-row: 1/2;
@@ -540,13 +549,18 @@ div.phone{
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    footer button{
-        padding: 15px 10px 10px 10px
+    a.contact{
+        width: 100px;
+        justify-self:center;
+        align-self:center;
+        text-align: center;
     }
     .phone{
         width: 100px;
         grid-column: 4/5;
         grid-row: 2/3;
+        justify-self:center;
+        align-self:center
     }
     .end1{
         text-align: center;
@@ -599,9 +613,9 @@ div.phone{
     .social1, .social2, .social3{
         top: 110px
     }
-    .book button{
+    a.book{
         top: 110px;
-        padding: 15px 10px 10px 10px;
+        padding: 25px
     }
     #body{
         grid-template-columns: 1fr 1fr 1fr;
@@ -704,6 +718,9 @@ div.phone{
     #servicesMain img{
         width: 500px;
     }
+    #servicesMain a.receptionlink, a.missionarylink{
+        padding: 15px 10px 10px 10px;
+    }
 /* ----------------------------------------footer */
     footer{
         grid-template-columns: 10% 25% 15% 15% 10% 25%;
@@ -722,13 +739,10 @@ div.phone{
         grid-column: 6/7;
         grid-row: 1/2;
     }
-    .contact{
-        margin-top: 12px;
+    footer a.contact{
+        margin-top: -12px;
         grid-column: 3/4;
         grid-row: 1/2;
-    }
-    footer button{
-        padding: 15px 10px 10px 10px
     }
     div.phone{
         width: 111px;
