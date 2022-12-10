@@ -1,0 +1,19 @@
+body{
+    font-size: 20px;
+}
+div.quote{
+    color: #777777;
+    background-color: #bedbed;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+main.three-col{
+    display: grid;
+    grid-template-columns: 250px 2fr 1fr;
+    column-gap: 40px;
+    align-items: center;
+}
+ul.products li:nth-child(2){
+    background-color: blue;
+}
