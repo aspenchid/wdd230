@@ -374,6 +374,43 @@ a.missionarylink, a.receptionlink{
 #missionarylink, #receptionlink{
     padding-top: 30px
 }
+/* ----------------------------------------reception */
+#receptionMain{
+    display:block;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    padding-bottom: 30px
+}
+#receptionMain h2{
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#receptionMain img{
+    width: 350px;
+    height: auto;
+}
+#receptionMain h3{
+    text-align: center;
+    background-color: rgb(253, 233, 236);
+    padding: 10px 10px 10px 15px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+#receptionMain p.first, p.second{
+    padding-bottom: 30px;
+    text-align: left;
+    line-height: 20px;
+}
+#receptionMain p.second{
+    margin-top: 50px;
+}
+#receptionMain div{
+    margin-bottom: 70px;
+}
 /* ----------------------------------------footer */
 footer{
     background-color: rgb(253, 233, 236);
@@ -517,6 +554,40 @@ div.phone{
     #freeamenities{
         grid-column: 1/3;
         width: 629px
+    }
+    /* ----------------------------------------reception */
+    #receptionMain h2{
+        margin-top: 130px;
+    }
+    #div0{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #receptionMain p.first{
+        margin-left: 100px;
+        margin-right: 100px
+    }
+    hr{
+        display: none
+    }
+    #receptionMain img{
+        width: 400px;
+    }
+    #receptionMain h3{
+        display: block;
+        grid-column: 1/3;
+        width: 200px;
+        align-self: center;
+        justify-self: center;
+    }
+    #div5{
+        grid-column: 1/3;
+        align-self: center;
+        justify-self: center;
+    }
+    #receptionMain p.second{
+        margin: -30px 200px 15px;
+        grid-column: 1/3;
     }
 /* ----------------------------------------footer */
     footer{
@@ -720,6 +791,22 @@ div.phone{
     }
     #servicesMain a.receptionlink, a.missionarylink{
         padding: 15px 10px 10px 10px;
+    }
+/* ----------------------------------------reception */
+    #div5{
+        grid-column: 1/2;
+    }
+    #receptionMain #div5 img{
+        margin-top: 70px
+    }
+    #receptionMain p.second{
+        grid-column: 2/3;
+        margin: 0 50px 0;
+        align-self:center;
+    }
+    #receptionMain p.first{
+        margin-left: 150px;
+        margin-right: 150px
     }
 /* ----------------------------------------footer */
     footer{
