@@ -45,7 +45,8 @@ function displayCard(card){
     <p>${card.street} ${card.citystatezip}</p>
     <p>${card.phone}</p>
     <p>${card.dedication}</p>
-    <input class="mycheck" id="check-${card.id}" type="checkbox" onclick="likeTemple(this);"> Like This Temple!`
+    <input class="mycheck" id="check-${card.id}" type="checkbox" onclick="likeTemple(this);"> 
+    <label for="likethistemple">Like This Temple!</label>`
     cardview.appendChild(cardelt)
 }
 // show list
