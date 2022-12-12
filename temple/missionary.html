@@ -36,12 +36,28 @@
                     from home. Please, let us know how we can achieve this goal for you.
                 </p>
                 <h3>Room Options</h3>
-                <img src="images/regular.jpg" alt="Regular Room">
-                <h4>Regular</h4>
-                <img src="images/balcony.jpg" alt="Balcony Room">
-                <h4>Balcony</h4>
-                <img src="images/deluxe.jpg" alt="Deluxe Room">
-                <h4>Deluxe</h4>
+                <div id="picdiv">
+                    <div>
+                    <img src="images/regular.jpg" alt="Regular Room">
+                    <h4>Regular</h4>
+                    <hr>
+                    </div>
+                    <div>
+                    <img src="images/double.jpg" alt="Double Room">
+                    <h4>Double</h4>
+                    <hr>
+                    </div>
+                    <div>
+                    <img src="images/balcony.jpg" alt="Balcony Room">
+                    <h4>Balcony</h4>
+                    <hr>
+                    </div>
+                    <div>
+                    <img src="images/deluxe.jpg" alt="Deluxe Room">
+                    <h4>Deluxe</h4>
+                    <hr>
+                    </div>
+                </div>
                 <h3>Discount</h3>
                 <p>If you are a full-time temple missionary, you receive a discount on your stay here. 
                     Please fill out this form, and tell us which stake you are from in the comments, and any other
@@ -55,6 +71,11 @@
                         <label class="top required">Last Name * <input type="text" name="lname" required></label>
                         <label class="top">Phone <input type="tel" name="phone" placeholder="1112223333"></label>
                         <label class="top required">Email * <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <div>Type of Room</div>
+                        <label class="radio"><input type="radio" name="roomtype" value="regular">Regular</label>
+                        <label class="radio"><input type="radio" name="roomtype" value="double">Double</label>
+                        <label class="radio"><input type="radio" name="roomtype" value="balcony">Balcony</label>
+                        <label class="radio"><input type="radio" name="roomtype" value="deluxe">Deluxe Suite</label>
                         <label class="top" >Message<textarea class="comments" name="comments" cols="36" rows="5"></textarea></label>
                     </fieldset>
                     <input class="submitBtn" type="submit" value="Contact Us!">
