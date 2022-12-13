@@ -19,7 +19,7 @@ function showWeather(obj){
   let windspeedobj = document.querySelector("#windspeed");
   let windchillobj = document.querySelector("#windchill");
   let humidity = document.querySelector("#humidity");
-  const iconURL = `http://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`;
+  const iconURL = `https://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`;
   let windchillmsg = "N/A";
   let temp = obj.main.temp;
   let windspeed = obj.wind.speed;
